@@ -1,0 +1,89 @@
+<Flex
+  direction="column"
+  w="100%"
+  h="500px"
+  bg="brand.background"
+  justify="center"
+  align="center"
+>
+
+
+<Heading
+  fontSize={['4xl', '4xl', '6xl']}
+  fontWeight="normal"
+  color="brand.text"
+  m={[3, 3, null]}
+  align="center"
+>
+  This is just a super simple MDX site
+</Heading>
+
+<Text
+  fontSize="3xl"
+  fontWeight="light"
+  color="brand.text"
+  mt={4}
+  m={[3, 3, null]}
+  align="center"
+>
+  Its just MDX using Chakra-UI components and built with Snowpack. Its pretty lightweight.
+</Text>
+
+</Flex>
+
+
+<SimpleGrid columns={[1, 2, 3]} spacing={10} p={6} bg="brand.accent" minH="500px">
+
+
+<Flex
+  h="200px"
+  bg="brand.background"
+  p={3}
+  d="column"
+  align="center"
+  boxShadow="-3px 3px 0px 1px hsla(0, 0%, 0%, 0.28)"
+>
+  <Box borderWidth={1.5} h="100%" p={3}>
+    <Text color="brand.text" fontSize="xl" lineHeight={1.5}>
+      <Emoji ariaLabel="A lightning bolt" symbol="⚡" />
+      The Chakra- UI components are pre loaded into the MDX files so they do not
+      need to be imported, you can just use them.
+    </Text>
+  </Box>
+</Flex>
+
+<Flex
+  h="200px"
+  bg="brand.background"
+  p={3}
+  d="column"
+  align="center"
+  boxShadow="-3px 3px 0px 1px hsla(0, 0%, 0%, 0.28)"
+>
+  <Box borderWidth={1.5} h="100%" p={3}>
+    <Text color="brand.text" fontSize="xl" lineHeight={1.5}>
+      <Emoji ariaLabel="A compass" symbol="🧭" />
+      Configuring the routes is as easy as creating a new MDX page and adding the
+      route and link to the MDXRoutes component
+    </Text>
+  </Box>
+</Flex>
+
+<Flex
+  h="200px"
+  bg="brand.background"
+  p={3}
+  d="column"
+  align="center"
+  boxShadow="-3px 3px 0px 1px hsla(0, 0%, 0%, 0.28)"
+>
+  <Box borderWidth={1.5} h="100%" p={3}>
+    <Text color="brand.text" fontSize="xl" lineHeight={1.5}>
+      <Emoji ariaLabel="A triangular ruler" symbol="📐" />
+      The base layout of the site can be configured in the MDXLayout component
+    </Text>
+  </Box>
+</Flex>
+
+</SimpleGrid>
+

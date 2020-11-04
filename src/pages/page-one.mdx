@@ -11,22 +11,50 @@ gridArea="text"
 justify="center"
 direction="column"
 h="100%"
+maxH="500px"
 w="90%"
 p={6}
 >
+  
 <Text color="brand.lightGrey" fontSize="6xl">Air Jordan 1</Text>
-<Text color="brand.text" fontSize="xl">
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
-
-
+<Box h="80%" position="relative" zIndex="101">
+<Text my={6} color="brand.text" fontSize="xl">
+The Air Jordan that was first produced for Michael Jordan in 1984 was designed by Peter C. Moore. The red and black colorway of the Nike Air Ship, the prototype for the Jordan I, was later outlawed by then-NBA Commissioner David Stern for having very little white on them (this rule, known as the "51 percent" rule, was repealed in the late 2000s).
+</Text>
+<Text my={6} color="brand.text" fontSize="xl">
+After the Nike Air Ship was banned, Michael Jordan and Nike introduced the Jordan I in colorways with more white, such as the "Chicago" and "Black Toe" colorways. They used the Nike Air Ship's ban as a promotional tool in advertisements, hinting that the shoes gave an unfair competitive advantage. The Air Jordan I was originally released from 1985 to 1986, with re-releases (known as "retros") in 1994, 2001–2004, and 2007 to the present. Along with the introduction of the Retro Air Jordan line up's, the brand has elevated to a household notoriety with star-struck collaborations and unique limited releases.
 </Text>
 
 
+<Box position="absolute" left="-45%" top="70%" display={['none', 'block']}>
+  <CustomText vertical text="Innovation" fontSize="72px" />
+</Box>
+</Box>
 </Flex>
 
 
-<Flex gridArea="product" justify="center" direction="column" h="100%">
-  <CanvasContainer/>
-
+<Flex
+  gridArea="product"
+  justify="center"
+  direction="column"
+  h="100%"
+  position="relative"
+>
+  <Product />
+  <Box
+    position="absolute"
+    right="-15%"
+    bottom="25%"
+    display={['none', 'block']}
+  >
+    <CustomText vertical color="#ed1c24" text="Jordan" fontSize="200px" />
+  </Box>
 </Flex>
+
+<Box position="absolute" bottom="0" right="30%">
+  <CustomText color="#5C5C5C" text="Air" fontSize="200px" />
+</Box>
+
+<Box position="absolute" top="-25%" right="20%" zIndex="100">
+  <CustomText color="#ed1c24" text="1" fontSize="800px" />
+</Box>

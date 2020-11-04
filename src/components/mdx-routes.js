@@ -8,7 +8,6 @@ import {
 } from 'react-router-dom';
 import PageOne from '../pages/page-one.mdx';
 
-
 /**
  * The routes for the app. When adding new pages add a new route and a corresponding nav link in the Nav component above. Import the new page and add it to the route.
  */

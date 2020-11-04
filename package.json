@@ -8,11 +8,14 @@
   },
   "dependencies": {
     "@chakra-ui/core": "^1.0.0-rc.7",
+    "@react-three/drei": "^2.2.3",
     "framer-motion": "^2.9.4",
     "history": "^5.0.0",
     "react": "^16.13.1",
     "react-dom": "^16.13.1",
-    "react-router-dom": "^6.0.0-beta.0"
+    "react-router-dom": "^6.0.0-beta.0",
+    "react-three-fiber": "^5.1.5",
+    "three": "^0.122.0"
   },
   "devDependencies": {
     "@babel/preset-react": "^7.12.1",

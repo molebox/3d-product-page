@@ -5,12 +5,9 @@ export default {
   colors: {
     ...theme.colors,
     brand: {
-      grey: '#f6f5f5',
-      lightBlue: '#145374',
-      darkBlue: '#00334e',
-      peach: '#ee6f57',
-      accent: '#DE3C4B',
-      background: '#121212',
+      red: '#ed1c24',
+      lightGrey: '#D6D6D6',
+      background: '#090d12',
       text: '#FFFfff',
     },
   },

@@ -16,7 +16,8 @@ import {
 import theme from './theme';
 import { MDXRoutes } from './components/mdx-routes.js';
 import MDXLayout from './components/mdx-layout';
-import Emoji from './components/emoji';
+import CanvasContainer from './components/3d/canvas-container';
+import Modal from './components/3d/modal';
 
 const components = {
   wrapper: (props) => <MDXLayout {...props}>{props.children}</MDXLayout>,
@@ -60,7 +61,8 @@ const components = {
   Image,
   SimpleGrid,
   Stack,
-  Emoji
+  CanvasContainer,
+  Modal
 };
 
 ReactDOM.render(
@@ -79,5 +81,7 @@ ReactDOM.render(
 if (import.meta.hot) {
   import.meta.hot.accept();
 }
+
+
 
 

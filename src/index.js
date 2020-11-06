@@ -17,7 +17,10 @@ import theme from './theme';
 import { MDXRoutes } from './components/mdx-routes.js';
 import MDXLayout from './components/mdx-layout';
 import Product from './components/3d/product';
+import Basketball from './components/3d/basketball';
 import CustomText from './components/custom-text';
+import DropletContainer from './components/3d/droplet-container';
+import GlitchText from './components/glitch-text';
 
 const components = {
   wrapper: (props) => <MDXLayout {...props}>{props.children}</MDXLayout>,
@@ -63,6 +66,9 @@ const components = {
   Stack,
   Product,
   CustomText,
+  DropletContainer,
+  Basketball,
+  GlitchText,
 };
 
 ReactDOM.render(

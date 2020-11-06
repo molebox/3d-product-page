@@ -1,7 +1,8 @@
 import React, { Suspense } from 'react';
 import { Canvas } from 'react-three-fiber';
 import { Box } from '@chakra-ui/core';
-import Modal from './modal';
+import ProductModal from './product-modal';
+import { OrbitControls } from '@react-three/drei';
 
 /**
  * A container with a set width to hold the canvas
@@ -17,7 +18,8 @@ const Product = () => {
         }}
       >
         <Suspense fallback={null}>
-          <Modal />
+          <ProductModal scenePath="shoes/scene.gltf" position={[0, 10, 0]} />
+          <OrbitControls />
         </Suspense>
       </Canvas>
     </Box>

@@ -1,16 +1,17 @@
 import React from 'react';
 import { Grid } from '@chakra-ui/core';
+import Background from './background';
 
 // Inspiration => https://dribbble.com/shots/4541416-Nike-Vapormax-Product-Page-Motion/attachments/4541416-Nike-Vapormax-Product-Page-Motion?mode=media
 
 const mobile = `
 'icon    .'
-'product  .'
-'text .'
+'product  product'
+'text text'
 `;
 const desktop = `
-'icon   .       .         .'
-'.      text    product   .'
+'edge   .       .         .'
+'edge   text    product   .'
 `;
 
 /**
@@ -20,7 +21,7 @@ const MDXLayout = ({ children }) => {
   return (
     <Grid
       templateColumns={['1fr', '10% 1fr 1fr 10% ']}
-      templateRows="10% 1fr"
+      templateRows={['10% 1fr 1fr', '10% 1fr 1fr']}
       templateAreas={[mobile, desktop]}
       bg="brand.background"
       h="100vh"

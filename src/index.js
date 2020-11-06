@@ -19,7 +19,6 @@ import MDXLayout from './components/mdx-layout';
 import Product from './components/3d/product';
 import Basketball from './components/3d/basketball';
 import CustomText from './components/custom-text';
-import DropletContainer from './components/3d/droplet-container';
 import GlitchText from './components/glitch-text';
 
 const components = {
@@ -66,7 +65,6 @@ const components = {
   Stack,
   Product,
   CustomText,
-  DropletContainer,
   Basketball,
   GlitchText,
 };

@@ -2,6 +2,7 @@ import React, { Suspense } from 'react';
 import { Canvas } from 'react-three-fiber';
 import { Box } from '@chakra-ui/core';
 import BasketballModal from './basketball-modal';
+import Loading from './../loading';
 
 /**
  * A container with a set width to hold the canvas
@@ -16,7 +17,7 @@ const Basketball = () => {
           fov: 50,
         }}
       >
-        <Suspense fallback={null}>
+        <Suspense fallback={<Loading />}>
           <BasketballModal
             scenePath="basketball/scene.gltf"
             position={[0, 17, 17]}

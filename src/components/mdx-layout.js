@@ -1,6 +1,5 @@
 import React from 'react';
 import { Grid } from '@chakra-ui/core';
-import Background from './background';
 
 // Inspiration => https://dribbble.com/shots/4541416-Nike-Vapormax-Product-Page-Motion/attachments/4541416-Nike-Vapormax-Product-Page-Motion?mode=media
 

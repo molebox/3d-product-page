@@ -3,7 +3,6 @@ import { Canvas } from 'react-three-fiber';
 import { Box } from '@chakra-ui/core';
 import ProductModal from './product-modal';
 import { OrbitControls } from '@react-three/drei';
-import Loading from '../loading';
 
 /**
  * A container with a set width to hold the canvas
@@ -18,7 +17,7 @@ const Product = () => {
           fov: 75,
         }}
       >
-        <Suspense fallback={<Loading />}>
+        <Suspense fallback={null}>
           <ProductModal scenePath="shoes/scene.gltf" position={[0, 10, 0]} />
           <OrbitControls />
         </Suspense>

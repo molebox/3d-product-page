@@ -1,5 +1,6 @@
 import React from 'react';
-import { Grid } from '@chakra-ui/core';
+import { Flex, Grid } from '@chakra-ui/core';
+import { Loader } from '@react-three/drei';
 
 // Inspiration => https://dribbble.com/shots/4541416-Nike-Vapormax-Product-Page-Motion/attachments/4541416-Nike-Vapormax-Product-Page-Motion?mode=media
 
@@ -26,6 +27,12 @@ const MDXLayout = ({ children }) => {
       h="100vh"
     >
       {children}
+      {/* An overlay that shows a loading percentage, when the loading is done it removes itself */}
+      <Loader
+        containerStyles={{
+          margin: '0 auto',
+        }}
+      />
     </Grid>
   );
 };

@@ -1,28 +1,21 @@
-import React, { Suspense } from 'react';
-import { Canvas } from 'react-three-fiber';
-import { Box } from '@chakra-ui/core';
-import ProductModal from './product-modal';
+import React from 'react';
+import Model from './model';
 import { OrbitControls } from '@react-three/drei';
+import CanvasContainer from './canvas-container';
 
 /**
- * A container with a set width to hold the canvas
+ * A trainers modal
  */
 const Product = () => {
   return (
-    <Box h={[300, 800]} w={[300, 800]} zIndex="999">
-      <Canvas
-        colorManagement
-        camera={{
-          position: [20, 30, 20],
-          fov: 75,
-        }}
-      >
-        <Suspense fallback={null}>
-          <ProductModal scenePath="shoes/scene.gltf" position={[0, 10, 0]} />
-          <OrbitControls />
-        </Suspense>
-      </Canvas>
-    </Box>
+    <CanvasContainer height={800} width={800} position={[20, 30, 20]} fov={75}>
+      <Model
+        scenePath="shoes/scene.gltf"
+        position={[0, 10, 0]}
+        rotation={[0, 0.005, 0]}
+      />
+      <OrbitControls />
+    </CanvasContainer>
   );
 };
 
